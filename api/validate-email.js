@@ -30,7 +30,7 @@ export default function handler(req, res) {
 
       return res.status(200).json({ success: true, redirectURL });
     } else {
-      return res.status(403).json({ success: false, message: "Email not authorized - Input Email in Lowercase" });
+      return res.status(403).json({ success: false, message: "Input Valid Email in Lowercase" });
     }
   } catch (error) {
     console.error("Error processing the request:", error);
